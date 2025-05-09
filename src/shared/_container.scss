@@ -1,0 +1,39 @@
+.container {
+    margin: pxToRem(30px) pxToRem(20px);
+    padding-top: pxToRem(60px);
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        max-width: pxToRem(375px);
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: pxToRem(720px);
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: pxToRem(960px);
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: pxToRem(1140px);
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        max-width: pxToRem(1440px);
+        margin: auto;
+    }
+}
