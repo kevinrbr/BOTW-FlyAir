@@ -55,7 +55,7 @@ import TripCardVue from '@/components/TripCard.vue';
     align-items: center;
 }
 .trips-wrapper {
-    margin-top: 100px;
+    margin: 100px 0;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
