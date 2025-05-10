@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import CircleIconLink from '@/components/CircleIconLink.vue';
+import TripCardVue from '@/components/TripCard.vue';
 
 </script>
 
@@ -11,8 +12,38 @@ import CircleIconLink from '@/components/CircleIconLink.vue';
         <a class="offers__link">Voir toutes les offres</a>
     </div>
     <div class="offers__circles">
-        <CircleIconLink icon="arrow" label="Aller simple"/>
+        <CircleIconLink is-arrow label="Aller simple"/>
         <CircleIconLink label="Aller-retour"/>
+    </div>
+    <div class="trips-wrapper">
+        <div class="column left">
+            <TripCardVue 
+            image="src/assets/marseille.png" 
+            city="Marseille"
+            region="Provence-Alpes-Côte d'Azur"
+            price="658"
+            />
+            <TripCardVue 
+            image="src/assets/marseille.png" 
+            city="Paris"
+            region="Île-de-France"
+            price="712"
+            />
+        </div>
+        <div class="column right">
+            <TripCardVue 
+            image="src/assets/marseille.png" 
+            city="Annecy"
+            region="Auvergne-Rhône-Alpes"
+            price="562"
+            />
+            <TripCardVue 
+            image="src/assets/marseille.png" 
+            city="Bordeaux"
+            region="Nouvelle-Aquitaine"
+            price="524"
+            />
+        </div>
     </div>
   </div>
 </template>
@@ -22,6 +53,28 @@ import CircleIconLink from '@/components/CircleIconLink.vue';
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.trips-wrapper {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100%;
+}
+
+.column {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
 }
 .offers {
     margin-top: 350px;

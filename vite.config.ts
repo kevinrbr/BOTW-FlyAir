@@ -18,7 +18,7 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@/shared/mixins.scss";` // ou le fichier où est défini pxToRem
+        additionalData: `@import "@/shared/mixins.scss";`
       }
     }
   }

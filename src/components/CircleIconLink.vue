@@ -1,16 +1,26 @@
 <script setup lang="ts">
-const props = defineProps<{
-  icon: string;
+import { computed } from 'vue';
+
+const props = withDefaults(defineProps<{
   label: string;
-}>();
+  isArrow?: boolean;
+  isWhite?: boolean;
+}>(), {
+  isArrow: false,
+  isWhite: false
+});
+
+const iconUrl = computed(() => props.isArrow ? "src/assets/icons/arrow.svg" : "src/assets/icons/swap.svg")
 </script>
 
 <template>
   <div class="circle-icon">
     <div class="circle-icon__icon">
-      <img src="@/assets/icons/arrow.svg" />
+      <img :src="iconUrl" />
     </div>
-    <span class="circle-icon__text">{{ label }}</span>
+    <span :class="['circle-icon__text', { 'is-white': isWhite }]">
+      {{ label }}
+    </span>
   </div>
 </template>
 
@@ -29,8 +39,13 @@ const props = defineProps<{
         justify-content: center;
         margin-right: 20px;
     }
+
     &__text {
         font-size: 14px;
+
+        &.is-white {
+          color: var(--color-text-secondary);
+        }
     }
 }
 </style>
