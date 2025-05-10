@@ -76,6 +76,16 @@
     --vt-c-black: #000000;
     --vt-c-black-soft: #222222;
     --vt-c-black-mute: #282828;
+
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
   
     --vt-c-indigo: #2c3e50;
   
@@ -88,22 +98,9 @@
     --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
     --vt-c-text-dark-1: var(--vt-c-white);
     --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-  }
-  
-  /* semantic color variables for this project */
-  :root {
-    --color-background: var(--vt-c-white);
-    --color-background-soft: var(--vt-c-white-soft);
-    --color-background-mute: var(--vt-c-white-mute);
-  
-    --color-border: var(--vt-c-divider-light-2);
-    --color-border-hover: var(--vt-c-divider-light-1);
-  
-    --color-heading: var(--vt-c-text-light-1);
+
     --color-text: var(--vt-c-black);
     --color-text-secondary: var(--primary);
-  
-    --section-gap: 160px;
   }
   
   @font-face {
@@ -120,19 +117,22 @@
     font-style: normal;
   }
   
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --color-background: var(--vt-c-black);
-      --color-background-soft: var(--vt-c-black-soft);
-      --color-background-mute: var(--vt-c-black-mute);
+  // @media (prefers-color-scheme: dark) {
+  //   :root {
+  //     --color-background: var(--vt-c-black);
+  //     --color-background-soft: var(--vt-c-black-soft);
+  //     --color-background-mute: var(--vt-c-black-mute);
   
-      --color-border: var(--vt-c-divider-dark-2);
-      --color-border-hover: var(--vt-c-divider-dark-1);
+  //     --color-border: var(--vt-c-divider-dark-2);
+  //     --color-border-hover: var(--vt-c-divider-dark-1);
   
-      --color-heading: var(--vt-c-text-dark-1);
-      --color-text: var(--vt-c-text-dark-2);
-    }
-  }
+  //     --color-heading: var(--vt-c-text-dark-1);
+  //     --color-text: var(--vt-c-text-dark-2);
+
+  //     --color-text: var(--vt-c-black);
+  //     --color-text-secondary: var(--primary);
+  //   }
+  // }
   
   *,
   *::before,
@@ -175,16 +175,21 @@
   
   h2 {
     font-family: 'Kaftan';
-    color: var(--vt-c-black);
+    color: var(--color-text);
     font-size: 32px;
     margin-bottom: 40px;
   }
   
   a {
     font-family: 'Suisse Intl';
-    color: var(--colo)
   }
   
   .container {
     padding: 0 160px;
+  }
+
+  span {
+    color: var(--color-text);
+    font-family: 'Suisse Intl';
+    font-size: 14px;
   }
