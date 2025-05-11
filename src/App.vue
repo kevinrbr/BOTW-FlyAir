@@ -29,6 +29,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   border-bottom: 1px solid var(--primary);
+  z-index: 999;
 
   .nav-left {
     font-family: 'Suisse Intl';

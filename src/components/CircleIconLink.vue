@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<{
   isWhite: false
 });
 
-const iconUrl = computed(() => props.isArrow ? "src/assets/icons/arrow.svg" : "src/assets/icons/swap.svg")
+const iconUrl = computed(() => props.isArrow ? "@/assets/icons/arrow.svg" : "@/assets/icons/swap.svg")
 </script>
 
 <template>

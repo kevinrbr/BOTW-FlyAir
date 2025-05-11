@@ -14,7 +14,7 @@
     </div>
 
     <div class="suites__list">
-        <Suite name="FlyAir" src="src/assets/img/suites/flyair.png">
+        <Suite name="FlyAir" src="@/assets/img/suites/flyair.png">
           <h2>La suite FlyAir - L'excellence absolue en altitude.</h2>
 
           <p style="margin-bottom: 32px;">Chaque instant de votre vol devient un privilège rare.</p>
@@ -27,7 +27,7 @@
           </ul>
         </Suite>
 
-        <Suite name="Elegance" src="src/assets/img/suites/elegance.png" inverted>
+        <Suite name="Elegance" src="@/assets/img/suites/elegance.png" inverted>
           <h2>La suite FlyAir - L'excellence absolue en altitude.</h2>
 
           <p style="margin-bottom: 32px;">Chaque instant de votre vol devient un privilège rare.</p>
@@ -40,7 +40,7 @@
           </ul>
         </Suite>
 
-        <Suite name="Essentielle" src="src/assets/img/suites/essentielle.png">
+        <Suite name="Essentielle" src="@/assets/img/suites/essentielle.png">
           <h2>La suite FlyAir - L'excellence absolue en altitude.</h2>
 
           <p style="margin-bottom: 32px;">Chaque instant de votre vol devient un privilège rare.</p>
