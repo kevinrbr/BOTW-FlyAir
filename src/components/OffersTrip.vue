@@ -20,13 +20,13 @@ import TripCardVue from '@/components/TripCard.vue'
       <div class="trips-wrapper">
         <div class="column left">
           <TripCardVue
-            image="@/assets/marseille.png"
+            image="/assets/marseille.png"
             city="Marseille"
             region="Provence-Alpes-Côte d'Azur"
             price="658"
           />
           <TripCardVue
-            image="@/assets/paris.png"
+            image="/assets/paris.png"
             city="Paris"
             region="Île-de-France"
             price="712"
@@ -34,13 +34,13 @@ import TripCardVue from '@/components/TripCard.vue'
         </div>
         <div class="column right">
           <TripCardVue
-            image="@/assets/annecy.png"
+            image="/assets/annecy.png"
             city="Annecy"
             region="Auvergne-Rhône-Alpes"
             price="562"
           />
           <TripCardVue
-            image="@/assets/bordeaux.png"
+            image="/assets/bordeaux.png"
             city="Bordeaux"
             region="Nouvelle-Aquitaine"
             price="524"

@@ -5,22 +5,22 @@
             <p class="monuments__text">Plongez dans l’art de vivre à la française, entre patrimoine, raffinement et émotions intenses.</p>
             <div class="monuments__list">
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-1.png" />
                 </div>
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-2.png" />
                 </div>
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-3.png" />
                 </div>
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-4.png" />
                 </div>
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-5.png" />
                 </div>
                 <div class="monuments__image-container">
-                    <img src="@/assets/monument1.png" />
+                    <img src="@/assets/monuments/mo-6.png" />
                 </div>
             </div>
             <div class="monuments__name-container">
