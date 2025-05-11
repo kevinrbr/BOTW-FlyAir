@@ -7,7 +7,6 @@ const props = defineProps<{
   city: string
   region: string
   price: string
-  icon: string
 }>();
 
 const priceText = computed(() => `Dès ${props.price}€*`);
