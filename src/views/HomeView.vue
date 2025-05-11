@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HeroBanner from '@/components/HeroBanner.vue'
+import MonumentsSection from '@/components/MonumentsSection.vue';
 import OffersTrip from '@/components/OffersTrip.vue';
 </script>
 
@@ -7,5 +8,6 @@ import OffersTrip from '@/components/OffersTrip.vue';
   <main>
     <HeroBanner />
     <OffersTrip />
+    <MonumentsSection />
   </main>
 </template>
