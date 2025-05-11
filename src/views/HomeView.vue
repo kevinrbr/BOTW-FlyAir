@@ -2,6 +2,7 @@
 import HeroBanner from '@/components/HeroBanner.vue'
 import MonumentsSection from '@/components/MonumentsSection.vue';
 import OffersTrip from '@/components/OffersTrip.vue';
+import SuitesSection from '@/components/Suites/SuitesSection.vue';
 </script>
 
 <template>
@@ -9,5 +10,6 @@ import OffersTrip from '@/components/OffersTrip.vue';
     <HeroBanner />
     <OffersTrip />
     <MonumentsSection />
+    <SuitesSection />
   </main>
 </template>

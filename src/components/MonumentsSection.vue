@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="monuments__name-container">
-            <span class="monuments__name">Monuments</span>
+                <span class="monuments__name">Monuments</span>
             </div>
         </div>
     </div>
@@ -32,7 +32,6 @@
 
 <style scoped lang="scss">
 .monuments {
-    margin-top: 350px;
     background-color: var(--secondary);
     padding: 150px 0;
 
@@ -65,9 +64,10 @@
     }
 
     &__name {
-        font-size: 96px;
         font-family: 'Kaftan';
+        // text-align: center;
         color: var(--color-text-secondary);
+        font-size: 64px;
     }
 }
 </style>

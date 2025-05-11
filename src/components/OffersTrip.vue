@@ -77,15 +77,18 @@ import TripCardVue from '@/components/TripCard.vue';
     justify-content: flex-end;
 }
 .offers {
-    margin-top: 350px;
+    padding-block: 350px;
+    background-color: #F3EDE5;
 
     &__intro {
         font-size: 24px;
         font-family: 'Suisse Intl';
+        color: var(--secondary);
     }
 
     &__link {
         text-decoration: underline;
+        color: var(--secondary);
     }
 
     &__circles {
