@@ -1,6 +1,11 @@
 <script setup lang="ts">
 import CircleIconLink from '@/components/CircleIconLink.vue'
 import TripCardVue from '@/components/TripCard.vue'
+
+import imageMarseille from '@/assets/marseille.png'
+import imageParis from '@/assets/paris.png'
+import imageAnnecy from '@/assets/annecy.png'
+import imageBordeaux from '@/assets/bordeaux.png'
 </script>
 
 <template>
@@ -20,27 +25,22 @@ import TripCardVue from '@/components/TripCard.vue'
       <div class="trips-wrapper">
         <div class="column left">
           <TripCardVue
-            image="/assets/marseille.png"
+            :image="imageMarseille"
             city="Marseille"
             region="Provence-Alpes-Côte d'Azur"
             price="658"
           />
-          <TripCardVue
-            image="/assets/paris.png"
-            city="Paris"
-            region="Île-de-France"
-            price="712"
-          />
+          <TripCardVue :image="imageParis" city="Paris" region="Île-de-France" price="712" />
         </div>
         <div class="column right">
           <TripCardVue
-            image="/assets/annecy.png"
+            :image="imageAnnecy"
             city="Annecy"
             region="Auvergne-Rhône-Alpes"
             price="562"
           />
           <TripCardVue
-            image="/assets/bordeaux.png"
+            :image="imageBordeaux"
             city="Bordeaux"
             region="Nouvelle-Aquitaine"
             price="524"
@@ -53,7 +53,7 @@ import TripCardVue from '@/components/TripCard.vue'
 
 <style scoped lang="scss">
 .offers__section {
-    background-color: #f3ede5;
+  background-color: #f3ede5;
 }
 .wrapper {
   display: flex;

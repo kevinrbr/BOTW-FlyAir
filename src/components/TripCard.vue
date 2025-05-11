@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import CircleIconLink from '@/components/CircleIconLink.vue';
-import { computed } from 'vue';
+import CircleIconLink from '@/components/CircleIconLink.vue'
+import { computed } from 'vue'
 
 const props = defineProps<{
   image: string
   city: string
   region: string
   price: string
-}>();
+}>()
 
-const priceText = computed(() => `Dès ${props.price}€*`);
+const priceText = computed(() => `Dès ${props.price}€*`)
 </script>
 
 <template>
@@ -17,10 +17,7 @@ const priceText = computed(() => `Dès ${props.price}€*`);
     <div class="offer-card__image-wrapper">
       <img class="offer-card__image" :src="image" :alt="city" />
       <div class="offer-card__badge">
-        <CircleIconLink  
-            :label="priceText"
-            is-white
-        />
+        <CircleIconLink :label="priceText" is-white />
       </div>
     </div>
     <div class="offer-card__info">
@@ -32,17 +29,18 @@ const priceText = computed(() => `Dès ${props.price}€*`);
 
 <style scoped lang="scss">
 .offer-card {
-    position: relative;
-    width: 412px;
+  position: relative;
+  width: 412px;
 
-     &__image-wrapper {
-        position: relative;
-        overflow: hidden;
+  &__image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 
     .offer-card__image {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
       filter: brightness(0.75);
     }
 
